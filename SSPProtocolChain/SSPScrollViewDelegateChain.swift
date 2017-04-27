@@ -67,7 +67,7 @@ open class SSPScrollViewDelegateChain: SSPProtocolChain<UIScrollViewDelegate>, U
             }
         }
         
-        return scrollView
+        return scrollView.subviews.first
     }
     
     public func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
